@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #ffffff;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; /* Add margin for spacing between navigation items */
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+        h1 {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            font-family: cursive; 
+        }
+
+
+        #pet-box {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        #pet-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #info-box {
+            float: left;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #info-box h2,
+        #info-box p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #adopt-button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #adopt-button:hover {
+            background-color: #45a049;
+        }
+        #pet-description-box {
+            float: left;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        #pet-description-box h2,
+        #pet-description-box p {
+            margin: 0;
+            padding: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header style=" background-color: #ffcc00;color: #000;padding: 20px;font-size: 40px;font-weight: bold;text-align: center;font-family: cursive; ">
+        Find your companion
+    </header>
+    <nav>
+        <a href="file:///C:/Users/dell/Desktop/Pet%20adoption%20website/INDEXES/front%20page%20.html">Home</a>
+        <a href="category.html">Category</a>
+        <a href="about.html">About us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <br><br>
+    <h1>CATEGORIES WE HAVE</h1>
+<br>
+<div class="container">
+  <header>
+      <div id="pet-box">
+          <img src="cats.jpg" alt="Pet Photo">
+      </div>
+      <div id="info-box">
+          <h2>CATS</h2>
+          <p>1-20 Years</p>
+          <a href="cat.html" id="adopt-button">SEE MORE</a>
+      </div>
+      <div id ="pet-description-box">
+          <p>Only 20% of Orange Cats Are Female. ...<br>
+            Cats Have Fewer Taste Buds Than Dogs or People. ... <br>
+            Cats Don't Get Cavities. ...<br>
+            Many Cats Get the Zoomies After Using the Litter Box. ...<br>
+            Cat Whiskers Are as Sensitive as Human Fingertips. ...</p><br>
+      </div>
+  </header>
+</div>
+<br>
+<div class="container">
+    <header>
+        <div id="pet-box">
+            <img src="dog.webp" alt="Pet Photo">
+        </div>
+        <div id="info-box">
+            <h2>DOGS</h2>
+            <p>Age: 1-10 YEARS</p>
+            <a href="dog.html" id="adopt-button">SEE MORE</a>
+        </div>
+        <div id ="pet-description-box">
+            <p>Dogs are the most popular pet on the planet! ...<br>
+                They evolved from a now-extinct species of wolf. ...<br>
+                They can learn over 100 words and gestures! ...<br>
+                Dog noses are at least 40x more sensitive than ours! ...<br>
+                Many work as assistance dogs, helping humans! ...</p>
+        </div>
+    </header>
+</div>
+<br>
+<div class="container">
+  <header>
+      <div id="pet-box">
+          <img src="hamster.webp" alt="Pet Photo">
+      </div>
+      <div id="info-box">
+          <h2>Hamster</h2>
+          <p>Age: 0-3 Years</p>
+          <a href="hamester.html" id="adopt-button">SEE MORE</a>
+      </div>
+      <div id ="pet-description-box">
+          <p>There Are About 20 Species of Hamsters.<br>
+            They Are Nocturnal Creatures.<br>
+            They Are Promiscuous.<br>
+            Hamsters Are Banned in Hawaii.<br>
+            Their Teeth Never Stop Growing.</p>
+      </div>
+  </header>
+</div>
+<br>
+<div class="container">
+    <header>
+        <div id="pet-box">
+            <img src="bird.png" alt="Pet Photo">
+        </div>
+        <div id="info-box">
+            <h2>BIRDS</h2>
+            <p>0-20 Years</p>
+            <a href="bird.html" id="adopt-button">SEE MORE</a>
+        </div>
+        <div id ="pet-description-box">
+            <p>The most amount yolks found in a single chicken egg were 9 yolks.<br>
+                Although an owl can turn its head 360 degree it cannot move its eyes.<br>
+                The eggs of humming bird are of the size of a pea.<br>
+                A penguin is the only bird that can walk straight.</p>
+        </div>
+    </header>
+</div>
+<br>
+<div class="container">
+      <header>
+          <div id="pet-box">
+              <img src="rabbits.jpg" alt="Pet Photo">
+          </div>
+          <div id="info-box">
+              <h2>RABBITS</h2>
+              <p>Age: 0-8 Years</p>
+              <a href="rabbit.html" id="adopt-button">SEE MORE</a>
+          </div>
+          <div id ="pet-description-box">
+              <p>A single bunny is a lonely bunny. ...<br>
+                They can live for up to 12 years. ...<br>
+                They're masters of hearing. ...<br>
+                Their eyesight isn't bad either. ...<br>
+                They're closer to wild rabbits than you might think. ...</p>
+          </div>
+      </header>
+</div>
+<footer>
+    <p>Email: findyourcompanion@gmail.com</p>
+</footer>
+</body>
+</html>

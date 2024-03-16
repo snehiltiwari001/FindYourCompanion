@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Find Your Companion</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            align-items: center;
+            overflow: hidden;
+        }
+        nav {
+            background-color: #444;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+        }
+
+nav a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin: 0 10px; /* Add margin for spacing between navigation items */
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+        header {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            font-family: cursive; 
+        }
+        h1 {
+            background-color: #ffcc00;
+            color: #000;
+            padding: 20px;
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            font-family: cursive; 
+        }
+
+
+        #pet-box {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        #pet-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #info-box {
+            float: left;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #info-box h2,
+        #info-box p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #adopt-button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #adopt-button:hover {
+            background-color: #45a049;
+        }
+        #pet-description-box {
+            float: left;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        #pet-description-box h2,
+        #pet-description-box p {
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form:hover {
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input,
+        textarea,
+        a[type="button"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        a[type="button"] {
+            background-color: #ff0000; 
+            color: white;
+        }
+
+        a[type="button"]:hover {
+            background-color: #cc0000; 
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Find your companion
+    </header>
+    <nav>
+        <a href="file:///C:/Users/dell/Desktop/Pet%20adoption%20website/INDEXES/front%20page%20.html">Home</a>
+        <a href="C:\Users\dell\Desktop\Pet adoption website\INDEXES\category.html">Category</a>
+        <a href="file:///C:/Users/dell/Desktop/Pet%20adoption%20website/INDEXES/about.html">About us</a>
+        <a href="file:///C:/Users/dell/Desktop/Pet%20adoption%20website/INDEXES/contact.html">Contact Us</a>
+        <a href="file:///C:/Users/dell/Desktop/Pet%20adoption%20website/START.html">Register</a>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="C1.jpg" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="C2.jpeg" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="C3.webp" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+<h1>CATEGORIES WE HAVE</h1>
+
+<div class="container">
+  <div>
+      <div id="pet-box">
+          <img src="cats.jpg" alt="Pet Photo">
+      </div>
+      <div id="info-box">
+          <h2>CATS</h2>
+          <p>1-20 Years</p>
+          <a href="cat.html" id="adopt-button">SEE MORE</a>
+      </div>
+      <div id ="pet-description-box">
+          <p>Only 20% of Orange Cats Are Female. ...<br>
+            Cats Have Fewer Taste Buds Than Dogs or People. ... <br>
+            Cats Don't Get Cavities. ...<br>
+            Many Cats Get the Zoomies After Using the Litter Box. ...<br>
+            Cat Whiskers Are as Sensitive as Human Fingertips. ...</p><br>
+      </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div>
+        <div id="pet-box">
+            <img src="dog.webp" alt="Pet Photo">
+        </div>
+        <div id="info-box">
+            <h2>DOGS</h2>
+            <p>Age: 1-10 YEARS</p>
+            <a href="dog.html" id="adopt-button">SEE MORE</a>
+        </div>
+        <div id ="pet-description-box">
+            <p>Dogs are the most popular pet on the planet! ...<br>
+                They evolved from a now-extinct species of wolf. ...<br>
+                They can learn over 100 words and gestures! ...<br>
+                Dog noses are at least 40x more sensitive than ours! ...<br>
+                Many work as assistance dogs, helping humans! ...</p>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+  <div>
+      <div id="pet-box">
+          <img src="hamster.webp" alt="Pet Photo">
+      </div>
+      <div id="info-box">
+          <h2>Hamster</h2>
+          <p>Age: 0-3 Years</p>
+          <a href="hamEster.html" id="adopt-button">SEE MORE</a>
+      </div>
+      <div id ="pet-description-box">
+          <p>There Are About 20 Species of Hamsters.<br>
+            They Are Nocturnal Creatures.<br>
+            They Are Promiscuous.<br>
+            Hamsters Are Banned in Hawaii.<br>
+            Their Teeth Never Stop Growing.</p>
+      </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div>
+        <div id="pet-box">
+            <img src="bird.png" alt="Pet Photo">
+        </div>
+        <div id="info-box">
+            <h2>BIRDS</h2>
+            <p>0-20 Years</p>
+            <a href="bird.html" id="adopt-button">SEE MORE</a>
+        </div>
+        <div id ="pet-description-box">
+            <p>The most amount yolks found in a single chicken egg were 9 yolks.<br>
+                Although an owl can turn its head 360 degree it cannot move its eyes.<br>
+                The eggs of humming bird are of the size of a pea.<br>
+                A penguin is the only bird that can walk straight.</p>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+      <div>
+          <div id="pet-box">
+              <img src="rabbits.jpg" alt="Pet Photo">
+          </div>
+          <div id="info-box">
+              <h2>RABBITS</h2>
+              <p>Age: 0-8 Years</p>
+              <a href="rabbit.html" id="adopt-button">SEE MORE</a>
+          </div>
+          <div id ="pet-description-box">
+              <p>A single bunny is a lonely bunny. ...<br>
+                They can live for up to 12 years. ...<br>
+                They're masters of hearing. ...<br>
+                Their eyesight isn't bad either. ...<br>
+                They're closer to wild rabbits than you might think. ...</p>
+          </div>
+        </div>
+</div>
+
+<br><br><br>
+<section style=" padding: 20px;margin: 20px;">
+    <h2 style="padding: 10px;margin: 10px;color:rgb(252, 134, 0);">About Us</h2>
+    <p style=" color: #000000;font-family: cursive;">
+        Welcome to FIND YOUR COMPANION, where compassion meets companionship. Our mission is to connect loving homes with animals in need, creating lifelong bonds that enrich both human and furry lives. At FIND YOUR COMPANION, we believe that every pet deserves a warm and caring home, and every individual deserves the joy and unconditional love that comes with having a loyal companion.
+With a passion for animal welfare, we strive to make the adoption process simple, joyful, and rewarding. Our dedicated team works tirelessly to rescue and rehabilitate animals, ensuring they are ready to become cherished members of your family. Whether you're looking for a playful kitten, a loyal canine friend, or a gentle small pet, we have a diverse range of loving animals waiting for their forever homes.
+
+By choosing to adopt from FIND YOUR COMPANION, you're not just gaining a pet; you're giving a second chance to a deserving soul. Join us in making a difference in the lives of these wonderful animals and experience the joy of unconditional love through pet adoption.
+
+Thank you for considering adoption and being a part of our mission to create a world where every pet has a loving home.
+    </p>
+</section><br><br>
+<h1 style="max-width: 400px;margin: 20px auto;padding: 20px;background-color: #fff;border-radius: 8px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">Contact Us</h1>
+
+<form action="mailto:teamsnehil@gmail.com" method="post" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <input type="submit" value="Submit">
+    <a href="file:///C:/Users/dell/Desktop/Pet%20adoption%20website/INDEXES/front%20page%20.html" type="button">Home</a>
+</form>
+<br><br><br>
+<footer>
+    <p>Email: findyourcompanion@gmail.com</p>
+</footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+</html>

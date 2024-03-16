@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #ffffff;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        #pet-box {
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        #pet-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        #info-box {
+            float: left;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #info-box h2,
+        #info-box p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #adopt-button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        #adopt-button:hover {
+            background-color: #45a049;
+        }
+        #pet-description-box {
+            float: left;
+            width: 300px;
+            height: 200px;
+            margin: 20px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+        #pet-description-box h2,
+        #pet-description-box p {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="pet-box">
+                <img src="germandog.webp" alt="Pet Photo">
+            </div>
+            <div id="info-box">
+                <h2>Name: Your Pet's Name</h2>
+                <p>Age: Your Pet's Age</p>
+                <a href="adopt.html" id="adopt-button">Adopt Now</a>
+            </div>
+            <div id ="pet-description-box">
+                <p>Age: Your Pet's Age</p>
+            </div>
+        </header>
+    </div>
+</body>
+</html>
